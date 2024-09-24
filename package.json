@@ -1,6 +1,6 @@
 {
 	"name": "textarea-code-block",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Web Component for making a Textarea element into a syntax highlighted codeblock",
 	"main": "code-block.js",
 	"files": [
