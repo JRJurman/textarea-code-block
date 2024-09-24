@@ -4,6 +4,8 @@ Web Component for making a Textarea element into a syntax highlighted codeblock!
 
 <img src="./preview.png" alt="syntax highlighted code with multiple colors, in a dark background textarea element, on a white background page element">
 
+See live example here: https://codepen.io/JRJurman/pen/GRVRxqe
+
 Based on
 [Font with Built-In Syntax Highlighting](https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/),
 this component allows you to _progressively enhance_ any `<textarea>` elements
