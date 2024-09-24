@@ -47,12 +47,12 @@ content.
 
 <script>
   t.innerHTML = `
-	  <!-- this is dynamically added content -->
-		<style>
-		  h1 { color: blue; }
-		</style>
-		<h1>Hello World</h1>
-	`;
+    <!-- this is dynamically added content -->
+    <style>
+      h1 { color: blue; }
+    </style>
+    <h1>Hello World</h1>
+  `;
   cb.processTextarea();
 </script>
 ```
