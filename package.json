@@ -1,0 +1,35 @@
+{
+	"name": "textarea-code-block",
+	"version": "1.0.0",
+	"description": "Web Component for making a Textarea element into a syntax highlighted codeblock",
+	"main": "code-block.js",
+	"files": [
+		"FontWithASyntaxHighlighter-Regular.woff2",
+		"code-block.js"
+	],
+	"scripts": {
+		"build": "#npx tram-deco export-components code-block.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JRJurman/textarea-code-block.git"
+	},
+	"keywords": [
+		"web-component",
+		"textarea",
+		"syntax",
+		"highlighting",
+		"tram-deco",
+		"html"
+	],
+	"author": {
+		"name": "Jesse Jurman",
+		"email": "j.r.jurman@gmail.com",
+		"url": "https://jrjurman.com"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/JRJurman/textarea-code-block/issues"
+	},
+	"homepage": "https://github.com/JRJurman/textarea-code-block#readme"
+}

@@ -1,0 +1,18 @@
+<script src="../code-block.js"></script>
+
+An example code snippet!
+
+<code-block id="cb">
+	<textarea id="t"></textarea>
+</code-block>
+
+<script>
+	t.innerHTML = `
+    <!-- this is dynamically added content -->
+    <style>
+      h1 { color: blue; }
+    </style>
+    <h1>Hello World</h1>
+	`;
+	cb.processTextarea();
+</script>

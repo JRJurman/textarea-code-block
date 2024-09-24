@@ -1,0 +1,17 @@
+<!-- note, no defer, so processTextarea is required -->
+<script src="../code-block.js"></script>
+
+An example code snippet!
+
+<code-block id="sample">
+	<textarea>
+    <hello-world>
+      <div>Better Testing</div>
+    </hello-world>
+    <script>console.error('danger!')</script>
+  </textarea>
+</code-block>
+
+<script>
+	sample.processTextarea();
+</script>
