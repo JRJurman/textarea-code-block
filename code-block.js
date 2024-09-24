@@ -1,9 +1,13 @@
 (() => {
-	const srcPath = document.currentScript.src;
-	const srcBasePath = srcPath.split('/').slice(0, -1).join('/');
+	let srcPath = document.currentScript.src;
+	// if the end path is something like code-block.js, build the relative path off the parent
+	// otherwise, this is most likely from a CDN, and we can just append the font path.
+	if (srcPath.endsWith('.js')) {
+		srcPath = srcPath.split('/').slice(0, -1).join('/');
+	}
 	const syntaxFont = new FontFace(
 		'FontWithASyntaxHighlighter',
-		`url('${srcBasePath}/FontWithASyntaxHighlighter-Regular.woff2') format('woff2')`
+		`url('${srcPath}/FontWithASyntaxHighlighter-Regular.woff2') format('woff2')`
 	);
 	document.fonts.add(syntaxFont);
 })();
