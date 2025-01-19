@@ -30,6 +30,10 @@ class TextareaCodeBlock extends HTMLElement {
 			}
 		`;
 		this.shadowRoot.append(styleElement, slotElement);
+
+		new MutationObserver(() => {
+			this.processTextarea();
+		}).observe(this, { childList: true });
 	}
 
 	connectedCallback() {

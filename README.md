@@ -24,7 +24,7 @@ Import the component using your CDN of choice or installing from npm, and then
 wrap any textarea with code in the new `<code-block>` element!
 
 ```html
-<script defer src="https://unpkg.com/textarea-code-block@1"></script>
+<script src="https://unpkg.com/textarea-code-block@1"></script>
 
 <code-block>
   <textarea>
@@ -38,36 +38,8 @@ wrap any textarea with code in the new `<code-block>` element!
 
 If you are dynamically creating or changing the textarea element, you can run
 `.processTextarea()` to update the `<code-block>` element based on the new
-content.
-
-```html
-<script src="https://unpkg.com/textarea-code-block@1"></script>
-
-<code-block id="cb">
-  <textarea id="t"></textarea>
-</code-block>
-
-<script>
-  t.innerHTML = `
-    <!-- this is dynamically added content -->
-    <style>
-      h1 { color: blue; }
-    </style>
-    <h1>Hello World</h1>
-  `;
-  cb.processTextarea();
-</script>
-```
-
-## Definition Loading & Defer
-
-Using `defer` in the script tag is required if you have DOM content in your
-template you want to process automatically. If you are using `.processTextarea`,
-you'll need to either also defer those scripts, or import the definition without
-`defer`.
-
-If you have ideas on how to make that more elegant,
-[feel free to reach out](https://fosstodon.org/@jrjurman)!
+content. There is a mutation observer included to also auto-update on new
+elements being inserted.
 
 ## Credit
 
