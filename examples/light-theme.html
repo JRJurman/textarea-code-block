@@ -1,0 +1,34 @@
+<script src="../code-block.js"></script>
+
+<style>
+  @font-palette-values --light-theme {
+    font-family: "FontWithASyntaxHighlighter";
+    override-colors:
+      0 #0c969b, /* keywords, {} */
+      1 #989fb1, /* comments */
+      2 #4876d6, /* literals */
+      3 #aa0982, /* numbers */
+      4 #994cc3, /* functions, [] */
+      5 #c96765, /* js others */
+      6 black, /* not in use */
+      7 #4876d6, /* inside quotes, css properties, few chars */
+      8 #994cc3 /* few chars */
+  }
+
+  textarea {
+    font-palette: --light-theme;
+    background: #FBFBFB;
+    color: black;
+  }
+</style>
+
+An example code snippet!
+
+<code-block>
+	<textarea>
+    <hello-world>
+      <div>Better Testing</div>
+    </hello-world>
+    <script>console.error('danger!')</script>
+  </textarea>
+</code-block>
